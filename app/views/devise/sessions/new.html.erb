@@ -10,7 +10,7 @@
   <div class="wrapper">
 	<div class="container">
 		<h1>EasyAdmin</h1>
-
+    <h2><%= devise_error_messages! %></h2>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :email %><br />
