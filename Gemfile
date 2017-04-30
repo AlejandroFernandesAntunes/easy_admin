@@ -32,6 +32,12 @@ gem 'ckeditor', '4.1.3'
 # Devise
 gem 'devise'
 
+# CanCanCan
+gem 'cancancan', '~> 1.10'
+
+# use migrations for data
+gem 'migration_data'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
