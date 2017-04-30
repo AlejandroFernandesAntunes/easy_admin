@@ -1,21 +1,14 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// html {
-//   background: url(bg.jpg) no-repeat center center fixed;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
-//
-// form {
-//   background: white;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-top: 16%;
-//   width: 50%;
-// }
+html {
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 * {
@@ -56,9 +49,9 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  background: #2b957a;
+  background: -webkit-linear-gradient(top left, #2b957a 0%, #37bc9b 100%);
+  background: linear-gradient(to bottom right, #2b957a 0%, #37bc9b 100%);
   position: absolute;
   top: 50%;
   left: 0;
@@ -116,7 +109,7 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #53e3a6;
+  color: #37bc9b;
 }
 form button {
   -webkit-appearance: none;
@@ -126,7 +119,7 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
+  color: #37bc9b;
   border-radius: 3px;
   width: 250px;
   cursor: pointer;
