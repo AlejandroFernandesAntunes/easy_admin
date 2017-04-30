@@ -9,7 +9,6 @@ html {
   background-size: cover;
 }
 
-
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 * {
   box-sizing: border-box;
@@ -49,9 +48,9 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #2b957a;
-  background: -webkit-linear-gradient(top left, #2b957a 0%, #37bc9b 100%);
-  background: linear-gradient(to bottom right, #2b957a 0%, #37bc9b 100%);
+  background: #4169E1;
+  background: -webkit-linear-gradient(top left, #4169E1 0%, #37bc9b 100%);
+  background: linear-gradient(to bottom right, #4169E1 0%, #37bc9b 100%);
   position: absolute;
   top: 50%;
   left: 0;
@@ -99,8 +98,8 @@ form input {
   text-align: center;
   font-size: 18px;
   color: white;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -webkit-transition-duration: 0.10s;
+          transition-duration: 0.10s;
   font-weight: 300;
 }
 form input:hover {
@@ -124,8 +123,8 @@ form button {
   width: 250px;
   cursor: pointer;
   font-size: 18px;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -webkit-transition-duration: 0.10s;
+          transition-duration: 0.10s;
 }
 form button:hover {
   background-color: #f5f7f9;
@@ -146,8 +145,8 @@ form button:hover {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.15);
   bottom: -160px;
-  -webkit-animation: square 25s infinite;
-  animation: square 25s infinite;
+  -webkit-animation: square 10s infinite;
+  animation: square 10s infinite;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }

@@ -28,6 +28,7 @@ gem 'rails_admin', '~> 1.1.1'
 # theme
 gem 'rails_admin_rollincode', '~> 1.0'
 gem 'ckeditor', '4.1.3'
+gem 'rich'
 
 # Devise
 gem 'devise'

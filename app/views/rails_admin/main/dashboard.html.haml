@@ -1,0 +1,17 @@
+%table.table.table-condensed.table-striped
+  %thead
+    %tr
+      %th.shrink.model-name= 'Notifications'
+  %tbody
+    - Notification.order(id: :desc).limit(5).each do |notification|
+      %tr
+        %td
+          %span.show= notification.created_at.strftime('%m/%d/%Y')
+          %h2.show= notification.title
+          %span.show{style:"overflow:scroll;"}= notification.body.html_safe
+
+- if @auditing_adapter && authorized?(:history_index)
+  #block-tables.block
+    .content
+      %h2= t("admin.actions.history_index.menu")
+      = render partial: 'rails_admin/main/dashboard_history'

@@ -41,43 +41,70 @@ RailsAdmin.config do |config|
   end
 
   config.model Notification do
+    label 'Notificación'
+    label_plural 'Notificaciones'
     edit do
-      field :title
-      field :body, :ck_editor
+      field :title do
+        label 'Título'
+      end
+      field :body, :ck_editor do
+        label 'Cuerpo'
+      end
     end
 
     list do
-      field :title
+      field :title do
+        label 'Título'
+      end
       field :created_at do
-        label 'Date'
+        label 'Fecha'
       end
     end
 
     show do
-      field :title
-      field :created_at do
-        label 'Date'
+      field :title do
+        label 'Título'
       end
-      field :body
+      field :created_at do
+        label 'Fecha'
+      end
+      field :body do
+        label 'Cuerpo'
+      end
     end
   end
 
   config.model Requirement do
+    label 'Requerimiento'
+    label_plural 'Requerimientos'
     list do
-      field :title
-      field :resolved
+      field :title do
+        label 'Título'
+      end
+      field :resolved do
+        label 'Resuelto?'
+      end
+      field :resolution do
+        label 'Solución'
+      end
     end
 
     edit do
-      field :title
-      field :body, :text
+      field :title do
+        label 'Título'
+      end
+      field :body, :text do
+        label 'Cuerpo'
+      end
       field :resolved do
+        label 'Resuelto?'
         read_only do
           %w(regular).include?(
             bindings[:controller].current_user.role)
         end
       end
       field :resolution do
+        label 'Solución'
         read_only do
           %w(regular).include?(
             bindings[:controller].current_user.role)
@@ -86,47 +113,91 @@ RailsAdmin.config do |config|
     end
 
     show do
-      field :title
-      field :body
-      field :resolution
-      field :resolved
+      field :title do
+        label 'Título'
+      end
+      field :body do
+        label 'Cuerpo'
+      end
+      field :resolution do
+        label 'Solución'
+      end
+      field :resolved do
+        label 'Resuelto?'
+      end
     end
   end
 
   config.model Service do
+    label 'Servicio'
+    label_plural 'Servicios'
     list do
-      field :kind
-      field :name
-      field :phone_number
-      field :observation
+      field :kind do
+        label 'Tipo de servicio'
+      end
+      field :name do
+        label 'Nombre'
+      end
+      field :phone_number do
+        label 'Número de teléfono'
+      end
+      field :observation do
+        label 'Observaciones'
+      end
     end
 
     edit do
-      field :kind
-      field :name
-      field :phone_number
-      field :observation, :text
+      field :kind do
+        label 'Tipo de servicio'
+      end
+      field :name do
+        label 'Nombre'
+      end
+      field :phone_number do
+        label 'Número de teléfono'
+      end
+      field :observation, :text do
+        label 'Observaciones'
+      end
     end
   end
 
   config.model User do
+    label 'Usuario'
+    label_plural 'Usuarios'
     visible do
       %w(regular).exclude?(
         bindings[:controller].current_user.role)
     end
     list do
-      field :name
-      field :email
-      field :apartment_number
-      field :phone_number
+      field :name do
+        label 'Nombre'
+      end
+      field :email do
+        label 'Email'
+      end
+      field :apartment_number do
+        label 'Apartamento'
+      end
+      field :phone_number do
+        label 'Número de teléfono'
+      end
     end
 
     edit do
       group :registration do
-        field :email
-        field :password
-        field :password_confirmation
+        label 'Información de registro'
+        field :email do
+          label 'Email'
+        end
+        field :password do
+          label 'Contraseña'
+        end
+        field :password_confirmation do
+          label 'Confirmación de contr.'
+        end
         field :role, :enum do
+          label 'Rol'
           enum do
             User.roles
           end
@@ -137,17 +208,32 @@ RailsAdmin.config do |config|
         end
       end
       group :personal_data do
-        field :name
-        field :apartment_number
-        field :phone_number
+        label 'Información personal'
+        field :name do
+          label 'Nombre'
+        end
+        field :apartment_number do
+          label 'Apartamento'
+        end
+        field :phone_number do
+          label 'Número de teléfono'
+        end
       end
     end
 
     show do
-      field :email
-      field :name
-      field :apartment_number
-      field :phone_number
+      field :email do
+        label 'Email'
+      end
+      field :name do
+        label 'Nombre'
+      end
+      field :apartment_number do
+        label 'Apartamento'
+      end
+      field :phone_number do
+        label 'Número de teléfono'
+      end
     end
   end
 end
