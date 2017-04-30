@@ -1,0 +1,25 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: easy_admin_development
+  pool:     5
+  username: postgres
+  password: postgres
+
+test:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: easy_admin_test
+  pool:     5
+  username: postgres
+  password: postgres
+production:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: easy_admin_production
+  pool:     5
+  username: postgres
+  password: postgres
