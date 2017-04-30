@@ -28,6 +28,10 @@ gem 'rails_admin', '~> 1.1.1'
 # theme
 gem 'rails_admin_rollincode', '~> 1.0'
 gem 'ckeditor', '4.1.3'
+
+# Devise
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
