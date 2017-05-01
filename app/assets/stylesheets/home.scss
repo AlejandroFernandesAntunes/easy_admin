@@ -9,7 +9,6 @@ html {
   background-size: cover;
 }
 
-
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 * {
   box-sizing: border-box;
@@ -49,9 +48,9 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #2b957a;
-  background: -webkit-linear-gradient(top left, #2b957a 0%, #37bc9b 100%);
-  background: linear-gradient(to bottom right, #2b957a 0%, #37bc9b 100%);
+  background: #4169E1;
+  background: -webkit-linear-gradient(top left, #4169E1 0%, #37bc9b 100%);
+  background: linear-gradient(to bottom right, #4169E1 0%, #37bc9b 100%);
   position: absolute;
   top: 50%;
   left: 0;
