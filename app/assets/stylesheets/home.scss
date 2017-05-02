@@ -9,6 +9,17 @@ html {
   background-size: cover;
 }
 
+.error-message{
+  background: #ba5244;
+  height: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding-top: 5px;
+  text-align: center;
+  width: 30%;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 * {
   box-sizing: border-box;
@@ -48,9 +59,9 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #4169E1;
-  background: -webkit-linear-gradient(top left, #4169E1 0%, #37bc9b 100%);
-  background: linear-gradient(to bottom right, #4169E1 0%, #37bc9b 100%);
+  background: #55a6e0;
+  background: -webkit-linear-gradient(top left, #55a6e0 0%, #4fc7ab 100%);
+  background: linear-gradient(to bottom right, #55a6e0 0%, #4fc7ab 100%);
   position: absolute;
   top: 50%;
   left: 0;
@@ -91,7 +102,7 @@ form input {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
   width: 250px;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 10px 15px;
   margin: 0 auto 10px auto;
   display: block;
@@ -108,7 +119,7 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 300px;
-  color: #37bc9b;
+  color: #4fc7ab;
 }
 form button {
   -webkit-appearance: none;
@@ -118,8 +129,8 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #37bc9b;
-  border-radius: 3px;
+  color: #4fc7ab;
+  border-radius: 0;
   width: 250px;
   cursor: pointer;
   font-size: 18px;

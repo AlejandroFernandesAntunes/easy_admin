@@ -1,6 +1,6 @@
 module DeviseHelper
   def devise_error_messages!
-    return 'User not found' unless resource.id.present?
-    'KABOOM!'
+    user = User.find_by(email: resource.email)
+    return 'Email no encontrado' unless user.present?
   end
 end
