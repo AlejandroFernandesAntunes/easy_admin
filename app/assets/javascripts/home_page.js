@@ -1,3 +1,7 @@
 $(document).ready(function(){
-  $('.error-message').fadeOut(300);
+  if($('.error-message')) {
+    setTimeout(function(){
+      $('.error-message').fadeOut();
+    }, 2000);
+  }
 });

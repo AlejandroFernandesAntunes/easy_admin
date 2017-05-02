@@ -1,8 +1,5 @@
 RailsAdmin.config do |config|
-
-  ### Popular gems integration
-
-  ## == Devise ==
+  config.main_app_name = ["Luna Azul I", "EasyAdmininstrator"]
   config.authenticate_with do
     warden.authenticate! scope: :user
   end
