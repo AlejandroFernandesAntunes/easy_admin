@@ -143,6 +143,21 @@ RailsAdmin.config do |config|
       end
     end
 
+    show do
+      field :kind do
+        label 'Tipo de servicio'
+      end
+      field :name do
+        label 'Nombre'
+      end
+      field :phone_number do
+        label 'Número de teléfono'
+      end
+      field :observation do
+        label 'Observaciones'
+      end
+    end
+
     edit do
       field :kind do
         label 'Tipo de servicio'

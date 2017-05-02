@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # rails admin
 gem 'rails_admin', '~> 1.1.1'
 # theme
-gem 'rails_admin_rollincode', '~> 1.0'
+gem 'rails_admin_rollincode'
 gem 'ckeditor', '4.1.3'
 gem 'rich'
 
