@@ -17,5 +17,5 @@
       %tr
         %td
           %span.show= notification.created_at.strftime('%m/%d/%Y')
-          %h2.show= notification.title
+          %h2.show= link_to "#{notification.title}", "/admin/notification/#{notification.id}"
           %span.show{style:"overflow:scroll;"}= notification.body.html_safe
